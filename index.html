@@ -1,13 +1,170 @@
-<html>
-  <head>
-    <title>Mee kosam maa salaha</title>
-  </head>
-  <body>
-    <div>
-      <h1 align="center">Mee kosam Maa Salaha </h1>
-      <p>
-        Welcome to meekosam maa salaha
-      </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+<title>Mee Kosam - Maa Salaha</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+
+        .parallax-section {
+            position: relative;
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax-section .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .parallax-content {
+            position: relative;
+            display: flex;
+            width: 80%;
+            color: white;
+            z-index: 1;
+        }
+
+        .parallax-content .text-section, .parallax-content .image-section {
+            flex: 1;
+            padding: 20px;
+            justify-content: center;
+            text-align: justify;
+        }
+
+        .parallax-content .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .footer{
+          background: rgba(0,0,0,0.9);
+          color: white;
+          text-align: center;
+          padding-top: 3%;
+          padding-bottom: 3%;
+        }
+
+        @media (max-width: 768px) {
+            .parallax-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- As a link -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img src="assets/logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
+        
+        </a>
+    </nav>
+    
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0"><h1 class="display-3">మీ కోసం - మా సలహా </h1></span>
+    </nav>
+
+</nav>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html"><i class="bi bi-file-person-fill"></i> About us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="contact_us.html"><i class="bi bi-telephone-fill"></i> Contact us</a>
+        </li>
+      </ul>
     </div>
-  </body>
+  </nav>
+
+  <!-- header ends -->
+    
+    <div class="parallax-section" style="background-image: url('assets/backgrounds/land_dispute.png');">
+        <div class="overlay"></div>
+        <div class="parallax-content">
+            <div class="image-section"><img src="assets/backgrounds/consultant.jpg" alt="Image 1"></div>
+            <div class="text-section" align="center"><br><br>
+              <h4 align="center">ధ్యేయం</h4>
+              <br>
+              <p>
+                &nbsp;&nbsp; &nbsp; మీ కోసం - మా సలహా అను ఈ వెబ్-సైటును ఏర్పాటు  చేయడం యొక్క ప్రధాన లక్ష్యం సామాన్య ప్రజలకు తమ భూసమస్యలపై పరిష్కారం కొరకు, 
+                తగు సూచనలు సలహాలు ఇవ్వడం. ౩౩ సంవత్సరాలు పైబడి ప్రభుత్వంలోని వివిధ శాఖల్లో పని చేసిన అనిభావంతో ప్రజలకు సేవలను అందించాలన్నది నా ఉద్దేశ్యం. 
+                ప్రధానంగా భూసమస్యలపై సలహాలు ఇష్టము. ఇతర శాఖల గురించి కూడా తగు సలహాలు ఇవ్వడానికి ప్రయత్నిస్తాము.
+
+              </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="parallax-section" style="background-image: url('assets/backgrounds/whatsapp.png');">
+        <div class="overlay"></div>
+        <div class="parallax-content">
+            <div class="text-section">
+              <p>
+                &nbsp;&nbsp;&nbsp;
+                మీరు చేయవలసిందల్లా ఈ నంబరుకు <a href="https://wa.me/91234xxxx">91234xxxx</a> వాట్సాప్ లో మీ సమస్యను ఒక తెల్ల కాగితంపై వ్రాసి మీ అడ్రసుతో సహా పంపిస్తే, మేము దాన్ని పరిశీలించి, మీకు మరల తిరిగి కాల్ చేసి, మీరు ఎవరిని సంప్రదించాలి / ఏ విధంగా దరఖాస్తు చేయాలి అనే విషయాలు తెలియజేస్తాము.
+              </p>
+              <p>
+                &nbsp;&nbsp;&nbsp;
+                చాలా మంది ప్రతీసోమవారం తమ సమస్యల గురించి జిల్లా కలెక్టరును కలుస్తుంటారు. కానీ పరిష్కారం లభించక పదే పదే కలెక్టరు కార్యాలయం చుట్టూ, స్థానిక ప్రజాప్రతినిధుల చుట్టూ తిరుగుతూవుంటారు. మేము సదరు అభ్యర్థికి (సమస్య ఉన్న వ్యక్తికి) స్పష్టంగా ఏమి చెయ్యాలి అనేది సూచనల ద్వారా తెలియజేస్తాము.
+              </p>
+            </div>
+            <div class="image-section"><img src="assets/backgrounds/grievance.jpg" alt="Image 2"></div>
+        </div>
+    </div>
+    
+    <div class="parallax-section" style="background-image: url('assets/backgrounds/lang_bg.png');">
+        <div class="overlay"></div>
+        <div class="parallax-content">
+            <div class="image-section"><img src="assets/backgrounds/problem.jpeg" alt="Image 3"></div>
+            <div class="text-section" align="center">
+              <br><br>
+              <p>
+                &nbsp;&nbsp;&nbsp;
+                అలాగే ప్రజలకు సంబంధించిన అంటే ఒక వ్యక్తికి అనే కాకుండా ఒక సమూహానికి సంబంధించిన సమస్యలపై కూడా సంప్రదిస్తే తగు సలహా ఇవ్వగలం.
+                </p><p>
+                &nbsp;&nbsp;&nbsp;
+                ( ఉ.దా. : భూమికి పట్టాదారు పాసుపుస్తకం, అలాగే కుటుంబ యజమాని మరణించినప్పుడు వారసుల పేర్లు మార్పు గురించి, సరిహద్దు సమస్యల గురించి, భూ రిజిస్ట్రేషన్ల సమస్యల గురించి ...)
+              </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div>
+          <h5>Consultant: Marisetti Jitendra, <small>M.Com., B.L.</small></h5> </div>
+        <div>Address: Rajamahendravaram</div>
+        <div>whatsapp: <a href="https://wa.me/9032121242">+91-9032121242</a></div>
+    </div>
+</body>
 </html>
