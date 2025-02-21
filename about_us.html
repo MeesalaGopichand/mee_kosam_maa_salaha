@@ -12,6 +12,26 @@
     <title>Mee Kosam - Maa Salaha</title>
 </head>
 <style>
+    .main_content_bg {
+            position: relative;
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main_content_bg .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .main_content{
+            background-color: rgba(255,255,255, 0.95);
+            padding : 3%;
+        }
     .details{
         position: relative;
         display: flex;
@@ -68,7 +88,9 @@
         <li class="nav-item">
           <a class="nav-link active" href="about_us.html"><i class="bi bi-file-person-fill"></i> About us</a>
         </li>
-        
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html"><i class="bi bi-file-image"></i> Gallery</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="contact_us.html"><i class="bi bi-telephone-fill"></i> Contact us</a>
         </li>
@@ -76,8 +98,8 @@
     </div>
   </nav>
   <!-- navbar ends -->
-
-  <div class="container" align="center">
+<div class="main_content_bg" style="background-image: url(assets/backgrounds/bg_Land.png);">
+  <div class="container main_content" align="center">
     <br>
         <h1 color="brown">మా గురించి కొంచెం...</h1>
         <div class="details">
@@ -85,7 +107,9 @@
             <div class="intro_details">
                 <br><br><br>
                 <p> &nbsp; &nbsp; &nbsp;
-                    <b>మారిశెట్టి జితేంద్ర గారు (M.Com, B.L.)</b> ఆంధ్ర ప్రదేశ్ ప్రభుత్వ అధికారిగా ప్రభుత్వానికీ ప్రజలకు అనేక రకాలుగా సేవలను అందించారు. ఆ సేవలను మరింత మందికి చేరవేయాలనే సంకల్పంతో ఈ మాధ్యమాన్ని ఎంచుకోవడం జరిగింది. జితేంద్రగారి ఉద్యోగ ప్రస్థానం, అలాగే వారు అందించు సేవలలో కొన్ని...
+                    <b>శ్రీ మారిశెట్టి జితేంద్ర గారు (M.Com, B.L.)</b> ఆంధ్ర ప్రదేశ్ ప్రభుత్వ అధికారిగా ప్రభుత్వానికీ ప్రజలకు అనేక రకాలుగా సేవలను అందించారు. 
+                    ఆ సేవలను మరింత మందికి చేరవేయాలనే సంకల్పంతో ఈ మాధ్యమాన్ని ఎంచుకోవడం జరిగింది. 
+                    జితేంద్రగారి ఉద్యోగ ప్రస్థానం, అలాగే వారు అందించిన సేవలలో కొన్ని...
                 </p>
             </div>
         </div>
@@ -137,7 +161,7 @@
             </tr>
             <tr>
                 <td>2010-11</td>
-                <td>P.D. DRDA జిల్లా గ్రామీణాభివృద్ధిసంస్థ ఏలూరు</td>
+                <td>P.D. DRDA జిల్లా గ్రామీణాభివృద్ధిసంస్థ, ఏలూరు</td>
             </tr>
             <tr>
                 <td>2011-2013</td>
@@ -162,12 +186,14 @@
             <tr>
                 <td>2019-22</td>
                 <td>
-                    ఆఫీసర్ ఆన్ స్పెషల్ డ్యూటీ టు శ్రీ కే. కన్నబాబు, వ్యవసాయ శాఖా మంత్రివర్యులు 
+                    ఆఫీసర్ ఆన్ స్పెషల్ డ్యూటీ టు శ్రీ కే. కన్నబాబు, <small>వ్యవసాయ శాఖా మంత్రివర్యులు </small>
                 </td>
             </tr>
             <tr>
                 <td>2022-23</td>
-                <td>ఆఫీసర్ ఆన్ స్పెషల్ డ్యూటీ టు శ్రీ కే. సత్యనారాయణ , ఎండోమెంట్స్ శాఖా మంత్రివర్యులు </td>
+                <td>
+                    ఆఫీసర్ ఆన్ స్పెషల్ డ్యూటీ టు శ్రీ కే. సత్యనారాయణ , <small>దేవాదాయ శాఖా మంత్రివర్యులు </small>
+                </td>
             </tr>
             <tr>
                 <td>ప్రస్తుతం</td>
@@ -175,7 +201,7 @@
             </tr>
         </table>
     </div>
-
+</div>
     <div class="footer">
         <div>
             <h5>Consultant: Marisetti Jitendra, <small>M.Com., B.L.</small></h5> </div>
