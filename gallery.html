@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 <title>Mee Kosam - Maa Salaha</title>
 </head>
 
@@ -36,42 +42,73 @@
           padding-top: 3%;
           padding-bottom: 3%;
         }
+        .headertext{
+          font-size: 50px;
+          text-align: left;
+        }
+        @media (max-width: 500px){
+            .headertext{
+          font-size: 35px;
+        }
+        .imageclass{
+          height: 50px;
+          width: 50px;
+        }
+      }
+        @media (max-width: 400px){
+            .headertext{
+          font-size: 30px;
+        }
+      }
+        @media (max-width: 300px){
+            .headertext{
+          font-size: 25px;
+        }
+      }
 </style>
 <body>
 
-    <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- As a link -->
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-        <img src="assets/logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
-        
-        </a>
-    </nav>
-    
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0"><h1 class="display-3">మీ కోసం - మా సలహా </h1></span>
-    </nav>
+     <!-- header -->
+  <div class="container d-lg-none">
+    <div >
+      <div class="col">
+        <img src="assets/logo.png" width="100" height="100" class="imageclass d-inline-block align-top" alt="">
+      </div>
+      <div class="col">
+        <span class="navbar-brand mb-0"><p class="headertext">మీ కోసం - మా సలహా </p></span>
+      </div>
+    </div>
+  </div>
 
-</nav>
+
+  <div class="container d-none d-lg-block">
+    <div class="row justify-content-start">
+      <div class="col">
+        <img src="assets/logo.png" width="100" height="100" class="imageclass d-inline-block align-top" alt="">
+      </div>
+      <div class="col">
+        <span class="navbar-brand mb-0"><p class="headertext">మీ కోసం - మా సలహా </p></span>
+      </div>
+    </div>
+  </div>
+  
     
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item dropdown">
           <a class="nav-link" href="about_us.html"><i class="bi bi-file-person-fill"></i> About us</a>
         </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="gallery.html"><i class="bi bi-file-image"></i> Gallery</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="gallery.html"><i class="bi bi-file-image"></i> Gallery</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item dropdown">
           <a class="nav-link" href="contact_us.html"><i class="bi bi-telephone-fill"></i> Contact us</a>
         </li>
       </ul>
@@ -108,7 +145,7 @@
         <div>
           <h5>Consultant: Marisetti Jitendra, <small>M.Com., B.L.</small></h5> </div>
         <div>Address: Rajamahendravaram</div>
-        <div>whatsapp: <a href="https://wa.me/9032121242">+91-9032121242</a></div>
+        <div>whatsapp: <a href="https://wa.me/918019569393">+91-8019569393</a></div>
     </div>
 </body>
 </html>
