@@ -18,6 +18,7 @@
     <title>Mee Kosam - Maa Salaha</title>
 </head>
 <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
     .main_content_bg {
             position: relative;
             height: 100%;
@@ -27,7 +28,14 @@
             align-items: center;
             justify-content: center;
         }
-
+        
+        .imageclass{
+          height: 150px;
+          width: 170px;
+          align-self: center;
+          align-items: center;
+          justify-content: center;
+        }
         .main_content_bg .overlay {
             position: absolute;
             width: 100%;
@@ -58,32 +66,40 @@
           padding-bottom: 3%;
         }
         .headertext{
-          font-size: 50px;
-          text-align: left;
+          font-family: Gurajada;
+          font-weight: 400;
+          font-size: 80px;
         }
-    @media (max-width: 768px){
-        .details{
-            flex-direction: column;
-            text-align: center;
+        @media (max-width: 768px) {
+            .parallax-content {
+                flex-direction: column;
+                text-align: center;
+       
         }
-    }
-    @media (max-width: 500px){
+        .headertext{
+          font-size: 60px;
+          font-weight: 400; font-family: Gurajada;
+        } 
+
+      }
+      @media (max-width: 500px){
             .headertext{
-          font-size: 35px;
+          font-size: 50px;
+          font-weight: 400;  font-family: Gurajada;
         }
         .imageclass{
-          height: 50px;
-          width: 50px;
+          height: 100px;
+          width: 100px;
         }
       }
         @media (max-width: 400px){
             .headertext{
-          font-size: 30px;
+          font-size: 35px;  font-family: Gurajada; font-weight: 400;
         }
       }
         @media (max-width: 300px){
             .headertext{
-          font-size: 25px;
+          font-size: 30px;
         }
       }
 </style>
@@ -91,15 +107,15 @@
 
  <!-- header -->
  <div class="container d-lg-none">
-    <div >
-      <div class="col">
-        <img src="assets/logo.png" width="100" height="100" class="imageclass d-inline-block align-top" alt="">
-      </div>
-      <div class="col">
-        <span class="navbar-brand mb-0"><p class="headertext">మీ కోసం - మా సలహా </p></span>
-      </div>
+  <div class="justify-content-start">
+    <div class="col-4">
+      <img src="assets/logo.png" class="imageclass d-inline-block align-top" alt="">
+    </div>
+    <div class="col-8">
+      <span class="navbar-brand mb-0"><p class="headertext" style="font-family: Dhurjati; font-weight: 400;">మీ కోసం - మా సలహా </p></span>
     </div>
   </div>
+</div>
 
 
   <div class="container d-none d-lg-block">
